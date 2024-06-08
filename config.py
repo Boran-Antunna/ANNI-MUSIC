@@ -7,18 +7,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Telegram API credentials - Get these from the Telegram API website
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "25976580"))
+API_HASH = getenv("API_HASH", "b5562ab77a96e49bc9dd78cc103c6333")
+BOT_TOKEN = getenv("BOT_TOKEN", "7318206950:AAFkMSu8et0wIaLopdLzSQk1t-Dprk6iGw0")
 
 # Specify where to get the following credentials
-OWNER_USERNAME = getenv("OWNER_USERNAME", "JARVIS_V2")
-BOT_USERNAME = getenv("BOT_USERNAME", "Annie_Music_Robot")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "PYRODEVELOPER")
+BOT_USERNAME = getenv("BOT_USERNAME", "Global_Musicz_Bot")
 BOT_NAME = getenv("BOT_NAME", "˹𝐀ɴɴɪᴇ ✘ 𝙼ᴜsɪᴄ˼ ♪")
-ASSUSERNAME = getenv("ASSUSERNAME", "musicXannie")
-EVALOP = list(map(int, getenv("EVALOP", "6797202080").split()))
+ASSUSERNAME = getenv("ASSUSERNAME", "PhoenixCoderOg")
+EVALOP = list(map(int, getenv("EVALOP", "6708929009").split()))
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOGGER_ID = int(getenv("LOGGER_ID", -1002163821686))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001553204990))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
 GPT_API = getenv("GPT_API")
